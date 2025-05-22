@@ -37,7 +37,7 @@ class DoNotTerminate {
                     throw new ExitTrappedException();
                 }
             }
-        }
+        };
         System.setSecurityManager(securityManager);
     }
 }
