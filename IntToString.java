@@ -2,7 +2,7 @@ import java.util.*;
 import java.security.*;
 public class IntToString {
 
-  try {
+    try {
         Scanner in = new Scanner(System.in);
         int n = in .nextInt();
         in.close();
@@ -16,10 +16,9 @@ public class IntToString {
         } else {
             System.out.println("Wrong answer.");
         }
-    } catch (DoNotTerminate.ExitTrappedException e) {
+    } catch(DoNotTerminate.ExitTrappedException e) {
         System.out.println("Unsuccessful Termination!!");
     }
-}
 }
 
 //The following class will prevent you from terminating the code using exit(0)!
@@ -38,7 +37,7 @@ class DoNotTerminate {
                     throw new ExitTrappedException();
                 }
             }
-        };
+        }
         System.setSecurityManager(securityManager);
     }
 }
